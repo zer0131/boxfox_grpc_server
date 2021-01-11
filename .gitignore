@@ -7,3 +7,4 @@ vendor/
 template/
 sftp-config.json
 .idea/
+boxfox_grpc_server
