@@ -1,0 +1,12 @@
+
+- name: boxfox_grpc_server 
+  # 可以使用相对路径
+  command: bin/boxfox_grpc_server
+  environ: []
+  directory: /home/work/boxfox_grpc_server
+  # 启动gosuv的时候自动启动
+  start_auto: true
+  # 最大重启次数
+  start_retries: 3
+  # 只有root用户可以指定用其他用户启动进程, 一般留空即可
+  user:

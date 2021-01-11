@@ -1,0 +1,24 @@
+
+syntax = "proto3";
+
+// package名称使用group，框架只在group层面避免冲突
+// 同组内部rpc服务的调用
+package demo;
+
+//import "github.com/lyft/protoc-gen-validate/validate/validate.proto";
+import "github.com/envoyproxy/protoc-gen-validate/validate/validate.proto";
+
+message MonitorReq {
+  string name = 1 [(validate.rules).string = {min_len: 1}];
+  int64 age = 2 [(validate.rules).int64 = {gte:1}];
+}
+
+message MonitorResp {
+  int32 errno = 1;
+  string errmsg = 2;
+}
+
+service BoxfoxGrpcServerService {
+  rpc Monitor(MonitorReq) returns (MonitorResp);
+}
+	
