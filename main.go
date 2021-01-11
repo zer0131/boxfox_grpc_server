@@ -33,10 +33,10 @@ import (
 	"github.com/zer0131/toolbox/interceptor/header"
 	"github.com/zer0131/toolbox/interceptor/perfcounter"
 
-	"boxfox_grpc_server/framework/app"
-	"boxfox_grpc_server/handler"
-	"boxfox_grpc_server/hook"
-	pb "boxfox_grpc_server/proto"
+	"github.com/zer0131/boxfox_grpc_server/framework/app"
+	"github.com/zer0131/boxfox_grpc_server/handler"
+	"github.com/zer0131/boxfox_grpc_server/hook"
+	pb "github.com/zer0131/boxfox_grpc_server/proto"
 )
 
 const (

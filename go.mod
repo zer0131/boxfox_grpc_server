@@ -1,4 +1,4 @@
-module boxfox_grpc_server
+module github.com/zer0131/boxfox_grpc_server
 
 go 1.14
 

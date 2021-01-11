@@ -1,8 +1,8 @@
 package handler
 
 import (
-	pb "boxfox_grpc_server/proto"
 	"context"
+	pb "github.com/zer0131/boxfox_grpc_server/proto"
 )
 
 type BoxfoxGrpcServerServiceHandler struct{}
